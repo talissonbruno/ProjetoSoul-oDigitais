@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <content>
+      <VBox prefHeight="179.0" prefWidth="588.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu fx:id="menuRegister" mnemonicParsing="false" text="Cadastro">
+                  <items>
+                    <MenuItem fx:id="menuItemCliente" mnemonicParsing="false" onAction="#onMenuItemCliente" text="Cliente" />
+                        <MenuItem fx:id="menuItemUsuario" mnemonicParsing="false" onAction="#onMenuItemUsuario" text="Usúario" />
+                        <MenuItem fx:id="menuItemTecnico" mnemonicParsing="false" onAction="#onMenuItemTecnico" text="Técnico" />
+                        <MenuItem fx:id="menuItemArea" mnemonicParsing="false" onAction="#onMenuItemArea" text="Area" />
+                  </items>
+                </Menu>
+                <Menu fx:id="menuItemPhysicalAnalyzes" mnemonicParsing="false" text="Análises Físicas">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Amostra" />
+                        <MenuItem mnemonicParsing="false" text="Resultado da Amostra" />
+                        <MenuItem mnemonicParsing="false" text="Densidade do solo" />
+                  </items>
+                </Menu>
+                  <Menu fx:id="menuItemChemicalAnalysis" mnemonicParsing="false" text="Análises Químicas">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="pH do solo" />
+                    </items>
+                  </Menu>
+                  <Menu fx:id="menuItemCultivation" mnemonicParsing="false" text="Cultivo">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Correção do solo" />
+                    </items>
+                  </Menu>
+                <Menu fx:id="menuItemHelp" mnemonicParsing="false" text="Ajudar">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Ajudar" />
+                  </items>
+                </Menu>
+                  <Menu fx:id="menuItemExit" mnemonicParsing="false" text="Sair">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Sair do sistema" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
